@@ -3,6 +3,7 @@ import config from './config/environment';
 
 const Router = Ember.Router.extend({
   location: config.locationType,
+  rootURL: config.rootURL,
 });
 
 Router.map(function () {
@@ -10,6 +11,8 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('queeresources');
+  this.route('queeresource', {path: '/queeresources/:queeresource_id'});
 });
 
 export default Router;
