@@ -1,1 +1,12 @@
-{{yield}}
+{{#link-to 'queeresources'}}Go back to resources{{/link-to}}
+
+  <form {{action 'updateList' on='submit'}}>
+    {{input placeholder='Change Name' value=list.title}}
+    <button type='submit'>Save</button>
+  </form>
+{{shopping-list list=model
+                toggleItemDone='toggleItemDone'
+                updateList='updateList'}}
+
+                <h4>{{model.name}}</h4>
+                <h5>hobby: {{model.hobby}}</h5>
