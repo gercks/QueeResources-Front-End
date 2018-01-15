@@ -5,17 +5,16 @@ export default Ember.Route.extend({
   // findAll makes a GET request to /queeresources
   return this.get('store').findAll('queeresource');
 },
-// actions: {
-  // createQr(queer-resource) {
-  //   console.log(queer-resource);
-  //   let newList = this.get('store').createRecord('list', list);
-  //   console.log(newList.get('isEmpty'))
-    // newList.save();
+actions: {
+  createQr(queeresource) {
+    let newQr = this.get('store').createRecord('queeresource', queeresource);
+    console.log(newQr.get('isEmpty'));
+    newQr.save();
+  },
+  // deleteList(queeresource) {
+  //   queeresource.deleteRecord();
+  //   queeresource.save();
   // },
-  // deleteList(list) {
-  //   list.deleteRecord();
-  //   list.save();
-  // },
-// }
+}
 
 });

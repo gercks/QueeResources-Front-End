@@ -1,6 +1,11 @@
 <h3>Create a new Resource</h3>
 
 <form {{action 'createQr' on='submit'}}>
-  {{input placeholder='New Resource Name' value=newQr.title}}
+  {{input placeholder='New Resource Name' value=newQr.name}}
+  {{input placeholder='New Resource Description' value=newQr.description}}
+  {{input placeholder='New Resource location' value=newQr.location}}
+  {{input placeholder='New Resource Website' value=newQr.website}}
+  {{input placeholder='New Resource orgtype' value=newQr.orgtype}}
+  {{input placeholder='New Resource Popfocus' value=newQr.popfocus}}
   <button type='submit'>Save</button>
 </form>
