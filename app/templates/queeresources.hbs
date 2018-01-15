@@ -2,21 +2,16 @@
 
 {{#link-to 'application'}}Go home{{/link-to}}
 
-{{!-- {{queeresource-form createList='createList'}} --}}
+{{queeresource-form createQr='createQr'}}
+
 <ul>
-{{#each model as |queerresource|}}
-  <li>{{#link-to 'queer-resource' queer-resource}}{{queerresource.name}}{{/link-to}}</li>
+{{#each model as |queeresource|}}
+  <li>{{#link-to 'queeresource' queeresource}}{{queeresource.name}}{{/link-to}}</li>
   {{!-- {{#if queerresource.isEmpty}}
     <button {{action 'deleteList' queerresource}}>Delete List</button>
     {{/if}} --}}
 {{/each}}
 </ul>
-
-{{!-- <ul>
-{{#each model as |employee|}}
-  <li>{{employee.name}}</li>
-{{/each}}
-</ul> --}}
 
 
 {{outlet}}
