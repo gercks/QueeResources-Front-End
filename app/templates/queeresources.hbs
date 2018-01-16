@@ -4,14 +4,9 @@
 
 {{queeresource-form createQr='createQr'}}
 
-<ul>
 {{#each model as |queeresource|}}
-  <li>{{#link-to 'queeresource' queeresource}}{{queeresource.name}}{{/link-to}}</li>
-  {{!-- {{#if queerresource.isEmpty}}
-    <button {{action 'deleteList' queerresource}}>Delete List</button>
-    {{/if}} --}}
+  <h3>{{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>
 {{/each}}
-</ul>
 
 
 {{outlet}}

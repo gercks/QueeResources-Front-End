@@ -8,13 +8,7 @@ export default Ember.Route.extend({
 actions: {
   createQr(queeresource) {
     let newQr = this.get('store').createRecord('queeresource', queeresource);
-    console.log(newQr.get('isEmpty'));
     newQr.save();
   },
-  // deleteList(queeresource) {
-  //   queeresource.deleteRecord();
-  //   queeresource.save();
-  // },
 }
-
 });

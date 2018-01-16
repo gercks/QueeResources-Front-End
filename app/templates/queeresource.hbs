@@ -1,0 +1,23 @@
+<h2>hey</h2>
+
+{{#link-to 'queeresources'}}Go back to resources{{/link-to}}
+
+<h4>{{model.name}}</h4>
+<h4>{{model.description}}</h4>
+<h4>{{model.location}}</h4>
+<h4>{{model.website}}</h4>
+<h4>{{model.orgtype}}</h4>
+<h4>{{model.popfocus}}</h4>
+
+<form {{action 'updateQr' on='submit'}}>
+  {{input placeholder=model.name value=model.name}}
+  {{input placeholder=model.description value=model.description}}
+  {{input placeholder=model.location value=model.location}}
+  {{input placeholder=model.website value=model.website}}
+  {{input placeholder=model.orgtype value=model.orgtype}}
+  {{input placeholder=model.popfocus value=model.popfocus}}
+  <button placeholder='Update' type='submit'>Save</button>
+</form>
+
+<br>
+<button {{action 'deleteQr' model}}>Delete Resource</button>
