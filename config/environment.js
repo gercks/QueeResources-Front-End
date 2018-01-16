@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
   ENV.rootURL = '/QueeResources-Front-End';
   ENV.locationType = 'hash';
-  ENV.apiHost = 'https://fast-spire-12567.herokuapp.com/';
+  ENV.apiHost = 'https://aqueous-falls-81772.herokuapp.com/';
   }
 
   return ENV;
