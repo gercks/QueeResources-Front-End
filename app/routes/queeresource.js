@@ -14,12 +14,7 @@ export default Ember.Route.extend({
     queeresource.save();
   },
   updateQr (queeresource) {
-      console.log(queeresource);
-      // this.get('store').findRecord(list);
-      // list.title.set()
+      queeresource.save();
     },
-  // updateQr (queeresource) {
-  //     queeresource.save();
-  //   },
 }
 });
