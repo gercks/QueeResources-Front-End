@@ -1,1 +1,12 @@
+<h2>Resources</h2>
+
+{{#link-to 'application'}}Go home{{/link-to}}
+
+{{queeresource-form createQr='createQr'}}
+
+{{#each model as |queeresource|}}
+  <h3>{{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>
+{{/each}}
+
+
 {{outlet}}
