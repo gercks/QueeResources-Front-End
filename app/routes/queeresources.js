@@ -1,14 +1,11 @@
 import Ember from 'ember';
+import RSVP from 'rsvp';
 
 export default Ember.Route.extend({
+  flashMessages: Ember.inject.service(),
   model () {
   // findAll makes a GET request to /queeresources
   return this.get('store').findAll('queeresource');
-},
-actions: {
-  createQr(queeresource) {
-    let newQr = this.get('store').createRecord('queeresource', queeresource);
-    newQr.save();
-  },
+  return RSVP.Promise.resolve({});
 }
 });

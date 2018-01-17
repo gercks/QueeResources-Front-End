@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('users');
   this.route('queeresources');
   this.route('queeresource', {path: '/queeresources/:queeresource_id'});
+  this.route('myqueeresources', {path: '/my-qrs'});
 });
 
 export default Router;

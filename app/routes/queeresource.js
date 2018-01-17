@@ -10,11 +10,21 @@ export default Ember.Route.extend({
   },
   actions: {
   deleteQr(queeresource) {
-    queeresource.deleteRecord();
-    queeresource.save();
+    queeresource.deleteRecord()
+    queeresource.save()
+    .then(() => this.get('flashMessages').success('Resource successfully deleted!'))
+    .catch(() => {
+      this.get('flashMessages')
+      .danger('There was a problem. Please try again.')
+    });
   },
   updateQr (queeresource) {
-      queeresource.save();
+      queeresource.save()
+      .then(() => this.get('flashMessages').success('Resource successfully updated!'))
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Please try again.')
+      });
     },
 }
 });

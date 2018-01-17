@@ -49,4 +49,9 @@ export default Ember.Service.extend({
     return this.get('ajax').del(`/sign-out`)
     .finally(() => this.get('credentials').reset());
   },
+  //
+  // myQrs () {
+  //     return this.get('ajax').get(`/my-qrs`)
+  // },
+
 });
