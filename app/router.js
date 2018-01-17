@@ -13,7 +13,8 @@ Router.map(function () {
   this.route('users');
   this.route('queeresources');
   this.route('queeresource', {path: '/queeresources/:queeresource_id'});
-  this.route('myqueeresources', {path: '/my-qrs'});
+  this.route('myqueeresources');
+  this.route('myqueeresource', {path: '/myqueeresources/:myqueeresource_id'});
 });
 
 export default Router;

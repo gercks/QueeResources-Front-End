@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   flashMessages: Ember.inject.service(),
+  auth: Ember.inject.service(),
+
+  user: Ember.computed.alias('auth.credentials.id'),
   model () {
   // findAll makes a GET request to /queeresources
   return this.get('store').query('queeresource', {
