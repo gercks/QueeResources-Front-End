@@ -8,13 +8,4 @@ export default Ember.Route.extend({
     // and returns it as model to the template
     return this.get('store').findRecord('queeresource', params.queeresource_id);
   },
-  actions: {
-  deleteQr(queeresource) {
-    queeresource.deleteRecord();
-    queeresource.save();
-  },
-  updateQr (queeresource) {
-      queeresource.save();
-    },
-}
 });

@@ -1,8 +1,6 @@
 <h2>Resources</h2>
 
-{{#link-to 'application'}}Go home{{/link-to}}
-
-{{queeresource-form createQr='createQr'}}
+{{#link-to 'myqueeresources'}}Go to my resources{{/link-to}}
 
 {{#each model as |queeresource|}}
   <h3>{{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>

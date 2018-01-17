@@ -1,6 +1,4 @@
-<h2>hey</h2>
-
-{{#link-to 'queeresources'}}Go back to resources{{/link-to}}
+{{#link-to 'queeresources'}}View All Resources{{/link-to}}
 
 <h4>{{model.name}}</h4>
 <h4>{{model.description}}</h4>
@@ -8,8 +6,3 @@
 <h4>{{model.website}}</h4>
 <h4>{{model.orgtype}}</h4>
 <h4>{{model.popfocus}}</h4>
-
-
-{{qr-update-form updateQr='updateQr' model=model}}
-
-<button {{action 'deleteQr' model}}>Delete Resource</button>
