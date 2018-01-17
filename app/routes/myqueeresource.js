@@ -15,7 +15,7 @@ export default Ember.Route.extend({
       .danger('There was a problem. Please try again.')
     });
   },
-  updateQr (queeresource) {
+  updateQr (queeresource, params) {
       queeresource.save()
       .then(() => this.get('flashMessages').success('Resource successfully updated!'))
       .then(() => this.transitionTo('myqueeresources'))

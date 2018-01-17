@@ -17,7 +17,11 @@ actions: {
   createQr(queeresource) {
     let newQr = this.get('store').createRecord('queeresource', queeresource)
     newQr.save()
-    .then(() => this.transitionTo('myqueeresources'))
+    this.get('store').query('queeresource', {
+        filter: {
+          user_id: this.getProperties('user').user
+        }
+      })
     // this.get('store').query('queeresource', {
     //     filter: {
     //       user_id: this.getProperties('user').user
