@@ -5,8 +5,9 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "myqueeresources"}}Create or Update Your Resource{{/link-to}}</li>
         {{/if}}
+        <li>{{#link-to "queeresources"}}View All Resources{{/link-to}}</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
@@ -29,6 +30,10 @@
 {{/each}}
 
 {{#link-to 'queeresources'}} View Resources {{/link-to}}
+
+{{#if isAuthenticated}}
+<p>{{#link-to 'myqueeresources'}}Go to my resources{{/link-to}}</p>
+{{/if}}
 
 <div class="col-md-8 col-md-offset-2">
   {{outlet}}

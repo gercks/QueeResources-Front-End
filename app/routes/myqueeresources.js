@@ -22,11 +22,7 @@ actions: {
           user_id: this.getProperties('user').user
         }
       })
-    // this.get('store').query('queeresource', {
-    //     filter: {
-    //       user_id: this.getProperties('user').user
-    //     }
-    //   })
+    .then(() => this.transitionTo('queeresources'))
     .then(() => this.get('flashMessages').success('Resource successfully created!'))
     .catch(() => {
       this.get('flashMessages')
