@@ -1,74 +1,43 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# Act App Front End Repository
 
-# Authentication in Ember
+This repository contains the front-end code for an application designed to be used as a sort of social media site for people involved with activism.
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
+The back end repository can be found here: https://github.com/gercks/Act-App-Back-End
 
-## Prerequisites
+The deployed database can be found here: https://evening-oasis-55074.herokuapp.com/events
 
--   [Ember Resources](https://github.com/ga-wdi-boston/ember-resources)
+And the deployed front end can be found here: https://gercks.github.io/Act-App-Front-End/
 
-## Objectives
+## Technologies used
 
-By the end of this, developers should be able to:
+This application was made using:
 
--   Implement token authentication in an Ember application.
--   Enforce authentication in protected routes.
+HTML
+CSS
+Javascript
+jQuery
 
-## Preparation
+## How it was made
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install` and `bower install`.
-1.  Start any API based on a recent version of the [Rails API
-    Template](https://github.com/ga-wdi-boston/rails-api-template) or the
-    [Express API
-    Template](https://github.com/ga-wdi-boston/express-api-template).
-1.  Start the front-end server with `ember server`.
+I began this project by creating a functional back end database using Ruby and Ruby on Rails, the link to which can be found above. Then, I began on this repository.
 
-## From end to end
+My first priority was to connect the front end to the back end, which I was able to do using ajax.
 
-Watch as I sign up for a new account on our demo app.
+In terms of HTML and CSS, it was important to me to have the first thing users see be authorization actions, and I achieved this using jQuery. I then moved on to implementing forms for users to fill out once signed in. Finally, I used handlebars to display items from the database in an organized way.
 
-*Other than the flash messages on the page, did anything change?  What about in
-the Chrome Developer Tools?*
+The biggest struggle I continue to have with the front end is mastering CSS floats, which was an ongoing problem while developing this project. I look forward to having that down pat!
 
-Take some time and sign in on your own, and check to see if anything in the
-Chrome Dev Tools has changed.
+## Improvements for next time
 
-Now that we have added a key tool to our personal developer toolkit lets look
-at how it's implemented.
+Most of the improvments I would make next time are related to the back end, but of course that would affect the front end as well. I would like for users to be able to RSVP to events and to search for events by name or date, but I didn't have enough time to make that happen this time around.
 
-## Follow Along
+## User Stories and Wireframes
 
-Let's walk through file by file to see what's happening.  I will ask
-developers to guide me through the files while correcting any misunderstandings.
+Here is the original wireframe for this project: https://imgur.com/a/AKkh9
 
-First let's start down the template and component trail, then we'll work our way
-up with actions.
+When building this game, I kept the following user stories in mind.
 
-*Remember: Data down, actions up.*
-
-While going up the Ember hierarchy we may need to stop a some point to discuss
-services.
-
-## Additional Resources
-
--   [Implementing Authentication with Ember Services - Ember
-    Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
--   [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is
-    compatible with token-based authentication like
-    JWT.](https://github.com/jpadilla/ember-simple-auth-token)
--   [simplabs/ember-simple-auth: A library for implementing
-    authentication/authorization in Ember.js
-    applications.](https://github.com/simplabs/ember-simple-auth)
--   [Create your first Ember 2.0 app: From authentication to calling an
-    API](https://auth0.com/blog/2015/08/11/create-your-first-ember-2-dot-0-app-from-authentication-to-calling-an-api/)
-
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+I am able to create my own account, sign in and out, and change my password as needed.
+I am able to create, delete, and update my own events.
+I am able to see all of the events posted on the app by other users.
+Other users are not able to do anything but view my events.
