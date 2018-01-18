@@ -1,43 +1,45 @@
-# Act App Front End Repository
 
-This repository contains the front-end code for an application designed to be used as a sort of social media site for people involved with activism.
+# Resources for Boston Queer Folk Front End Repository
 
-The back end repository can be found here: https://github.com/gercks/Act-App-Back-End
+This repository contains the front-end code for an application designed to connect queer people in the Boston Area to the resources that exist for their benefit.
 
-The deployed database can be found here: https://evening-oasis-55074.herokuapp.com/events
+The back end repository can be found here: https://github.com/gercks/QueeResources-API
 
-And the deployed front end can be found here: https://gercks.github.io/Act-App-Front-End/
+The deployed database can be found here: https://aqueous-falls-81772.herokuapp.com/queeresources
+
+And the deployed front end can be found here: https://gercks.github.io/QueeResources-Front-End/
+
+Here's what the app currently looks like:
+<img src="https://imgur.com/a/Q4aNL">
 
 ## Technologies used
 
 This application was made using:
 
 HTML
-CSS
-Javascript
-jQuery
+handlebars
+SCSS
+Ember
 
 ## How it was made
 
-I began this project by creating a functional back end database using Ruby and Ruby on Rails, the link to which can be found above. Then, I began on this repository.
+I began this project by creating a functional back end database using Ruby and Ruby on Rails, the link to which can be found above.
 
-My first priority was to connect the front end to the back end, which I was able to do using ajax.
+Then, I began using ember to build the front end. I began by creating a route to display all of the resources in the app as a list of links that bring the user to the page each specific resource. I displayed both using handlebars and both get their functionality through ember. I then created a route to display all of the resources the signed-in user has created (if any). This route is only visible to signed in users, and it contains forms to create and update resources as well as a way to delete resources.
 
-In terms of HTML and CSS, it was important to me to have the first thing users see be authorization actions, and I achieved this using jQuery. I then moved on to implementing forms for users to fill out once signed in. Finally, I used handlebars to display items from the database in an organized way.
+## Improvements to be Made
 
-The biggest struggle I continue to have with the front end is mastering CSS floats, which was an ongoing problem while developing this project. I look forward to having that down pat!
-
-## Improvements for next time
-
-Most of the improvments I would make next time are related to the back end, but of course that would affect the front end as well. I would like for users to be able to RSVP to events and to search for events by name or date, but I didn't have enough time to make that happen this time around.
+I am by no means done with this app. I have a few major updates to functionality that I still want to do: I want to have the front page separate resources by type via buttons, so a user can click on the type of resource they're looking for and be brought to the proper list. I also want to add like and comment options for users. Finally, this badly needs styling.
 
 ## User Stories and Wireframes
 
-Here is the original wireframe for this project: https://imgur.com/a/AKkh9
+Here is the original wireframe for this project:
+<img src="https://imgur.com/a/6dkpv">
 
-When building this game, I kept the following user stories in mind.
+When building this app, I kept the following user stories in mind.
 
-I am able to create my own account, sign in and out, and change my password as needed.
-I am able to create, delete, and update my own events.
-I am able to see all of the events posted on the app by other users.
-Other users are not able to do anything but view my events.
+- Resources are organized in a way that is easy for me to read and understand
+- I can add and update my own resource without worrying that another user will delete it (but an administrator might)
+- I can navigate to a page that is specific to the resource I want to learn more about that contains more information
+- I can view all resources in a list on the same page
+- I can view all information without logging in
