@@ -1,10 +1,21 @@
 {{#link-to 'myqueeresources'}}Go back to my resources{{/link-to}}
 
-<h4>{{model.name}}</h4>
-<h4>{{model.description}}</h4>
-<h4>{{model.location}}</h4>
-<h4>{{model.website}}</h4>
+<h2>{{model.name}}</h2>
+<br>
+<br>
+<h4>About</h4>
+<h5>{{model.description}}</h5>
+<br>
+<h4>Location</h4>
+<h5>{{model.location}}</h5>
+<br>
+<h4>Website</h4>
+<h5>{{model.website}}</h5>
+<br>
+<h4>Resource Category</h4>
 <h4>{{model.orgtype}}</h4>
+<br>
+<h4>Population Focus</h4>
 <h4>{{model.popfocus}}</h4>
 
 {{qr-update-form updateQr='updateQr' model=model}}
