@@ -1,8 +1,19 @@
-<h2>Resources</h2>
+<h2>Resources by Category</h2>
 
+<button class='orgtypes'>{{#link-to 'youth-community-spaces' queeresource=queeresource}} Youth Community Spaces {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'school-resources' queeresource=queeresource}} School resources {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'sa-and-dv' queeresource=queeresource}} Sexual Assault and Domestic Violence {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'legal-assistance' queeresource=queeresource}} Legal Assistance {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'family-resources' queeresource=queeresource}} Resources for Families and Support Systems {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'online-resources' queeresource=queeresource}} Online Guides and Resources {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'health-and-wellness' queeresource=queeresource}} Health and Wellness {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'training-conferences-and-contd-ed' queeresource=queeresource}} Training, Conferences, and Continuing Education {{/link-to}}</button>
+<button class='orgtypes'>{{#link-to 'performing-arts' queeresource=queeresource}} Performing and Live Arts {{/link-to}}</button>
+
+{{!-- <h2>All Resources</h2>
 {{#each model as |queeresource|}}
   <h3>{{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>
-{{/each}}
+{{/each}} --}}
 
 
 {{outlet}}
