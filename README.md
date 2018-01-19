@@ -10,7 +10,7 @@ The deployed database can be found here: https://aqueous-falls-81772.herokuapp.c
 And the deployed front end can be found here: https://gercks.github.io/QueeResources-Front-End/
 
 Here's what the app currently looks like:
-![github image](https://imgur.com/a/Q4aNL)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/6dkpv"><a href="//imgur.com/6dkpv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Technologies used
 
