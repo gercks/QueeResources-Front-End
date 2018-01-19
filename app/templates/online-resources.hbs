@@ -1,0 +1,5 @@
+<h2>Online Guides and Resources</h2>
+
+{{#each model as |queeresource|}}
+  <h3>{{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>
+{{/each}}
