@@ -22,8 +22,8 @@
   </div>
 </nav>
 
-<h1>QueeResources</h1>
-<h3>Resources for the Queer community in Boston</h3>
+<h1>Resources for the Queer Community in Boston</h1>
+<h3></h3>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
@@ -32,7 +32,7 @@
 {{#link-to 'queeresources'}} View All Resources {{/link-to}}
 
 {{#if isAuthenticated}}
-<p>{{#link-to 'myqueeresources'}}Go to my resources{{/link-to}}</p>
+<p>{{#link-to 'myqueeresources'}}Go to My Resources{{/link-to}}</p>
 {{/if}}
 
 <div class="col-md-8 col-md-offset-2">

@@ -1,9 +1,8 @@
-<h2>Welcome to my queeresources!</h2>
-
-{{#link-to 'queeresources'}}View All Resources{{/link-to}}
-
-{{queeresource-form createQr='createQr'}}
+<h2>Resources You've Added:</h2>
 
 {{#each model as |queeresource|}}
   <h3>{{#link-to 'myqueeresource' queeresource}}{{queeresource.name}}{{/link-to}}</h3>
 {{/each}}
+<br>
+<br>
+{{queeresource-form createQr='createQr'}}
