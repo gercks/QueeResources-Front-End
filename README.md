@@ -11,10 +11,7 @@ And the deployed front end can be found here: https://gercks.github.io/QueeResou
 
 Here's what the app currently looks like:
 <img src="https://imgur.com/a/Q4aNL" title="app at time of submission"/>
-![app](https://imgur.com/a/Q4aNL)
-![app]("https://imgur.com/a/Q4aNL")
-![app][(https://imgur.com/a/Q4aNL)]
-![app][("https://imgur.com/a/Q4aNL")]
+
 ## Technologies used
 
 This application was made using:
