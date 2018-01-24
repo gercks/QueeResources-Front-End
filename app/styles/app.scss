@@ -2,8 +2,8 @@
 @import 'bootstrap/theme';
 
 body {
-  background-color: #ffba19;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .orgtypes {
@@ -17,4 +17,13 @@ body {
   border-radius: 40%;
   background-color: pink;
   color: black;
+}
+
+.sourcediv {
+  background-color: #8da0cb;
+  height: 50px;
+  text-align: center;
+  a {
+    color: white;
+  }
 }
