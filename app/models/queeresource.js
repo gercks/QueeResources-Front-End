@@ -6,5 +6,7 @@ export default DS.Model.extend({
   location: DS.attr('string'),
   website: DS.attr('string'),
   orgtype: DS.attr('string'),
-  popfocus: DS.attr('string')
+  popfocus: DS.attr('string'),
+  comments: DS.hasMany('comment'),
+  user: DS.belongsTo('user')
 });
