@@ -1,9 +1,10 @@
 {{#if auth.isAuthenticated}}
-<h3>Post A Comment</h3>
-<form {{action 'createComment' on='submit' post=post}}>
+<h4>Post A Comment</h4>
+<form {{action 'createComment' on='submit' queeresource=queeresource }}>
   {{textarea value=newComment.text placeholder='New Comment'}}
+  <br>
   <button class="submit" type="submit">Post Comment</button>
-  {{message}}
+  {{!-- {{message}} --}}
 </form>
 {{else}}
 <h2 class="sign-in-to-post">Sign in to Comment</h2>
