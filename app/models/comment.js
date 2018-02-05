@@ -5,5 +5,6 @@ export default DS.Model.extend({
   user_id: DS.attr('number'),
   queeresource_id: DS.attr('number'),
   queeresource: DS.belongsTo('queeresource'),
-  user: DS.belongsTo('user')
+  user: DS.belongsTo('user'),
+  editable: DS.attr('boolean')
 });

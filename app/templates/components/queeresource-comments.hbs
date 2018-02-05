@@ -1,0 +1,11 @@
+{{#each queeresource.comments as |comment|}}
+<legend>
+<div class="comment">{{comment.text}}</div>
+{{!-- {{display-user user=comment.user}} --}}
+<div class="comment-buttons">
+<button {{action 'deleteComment' comment}}>Delete Comment</button>
+  {{!-- {{update-comment updateComment='updateComment' comment=comment}}  --}}
+</div>
+
+</legend>
+{{/each}}
