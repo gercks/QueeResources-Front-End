@@ -17,13 +17,6 @@
 {{create-comment queeresource=model createComment='createComment'}}
 </div>
 
-{{!-- <h4 class="comment-count">{{queeresource.comments.length}}<span> comments</span></h4>
+<h4 class="comment-count">{{model.comments.length}}<span> comments</span></h4>
 <br><br>
-{{#each queeresource.comments as |comment|}}
-
-<legend>
-<div class="comment"> > {{comment.text}}</div>
-{{display-user user=comment.user}} --}}
-{{!-- <div class="comment-buttons"> {{delete-comment comment=comment}}{{update-comment updateComment='updateComment' comment=comment}} </div> --}}
-{{!-- </legend>
-{{/each}} --}}
+{{queeresource-comments queeresource=model }}

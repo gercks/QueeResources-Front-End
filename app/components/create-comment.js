@@ -17,6 +17,6 @@ export default Ember.Component.extend({
        this.get('flashMessages')
        .danger('Please write a comment before submitting');
      }
-   }
+   },
  }
 });
