@@ -1,5 +1,5 @@
 <h2>Resources for Families and Support Systems</h2>
 
 {{#each model as |queeresource|}}
-  <h3>{{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>
+{{#link-to 'queeresource' queeresource }}<button class='sourcediv' type="button">{{queeresource.name}}</button>{{/link-to}}
 {{/each}}

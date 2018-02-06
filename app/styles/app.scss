@@ -21,18 +21,21 @@ body {
 
 .sourcediv {
   background-color: #8da0cb;
-  height: 50px;
+  height: 100px;
+  width: 30%;
+  margin: 1%;
   text-align: center;
-  a {
-    color: white;
-  }
+  color: white;
+  float: left;
 }
 
 .myqr {
 margin: auto;
-width: 10%;
-margin-left: 45%;
-margin-right: 45%;
+width: 20%;
+margin-left: 40%;
+margin-right: 40%;
+font-size: 20px;
+border-radius: 20%;
 border: 2px solid #8da0cb;
 color: black;
 }

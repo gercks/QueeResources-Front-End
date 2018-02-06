@@ -5,7 +5,7 @@
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "myqueeresources"}}Create or Update Your Resource{{/link-to}}</li>
+        <li>{{#link-to "myqueeresources"}}Create or Edit Your Resources{{/link-to}}</li>
         {{/if}}
         <li>{{#link-to "queeresources"}}View All Resources{{/link-to}}</li>
       </ul>
@@ -29,7 +29,10 @@
 <h1>Resources for the Queer Community in Boston</h1>
 
 {{#if isAuthenticated}}
-{{#link-to 'myqueeresources'}}<button type="button" class="myqr">Go to My Resources</button>{{/link-to}}
+{{#link-to 'myqueeresources'}}<button type="button" class="myqr">Create or Edit Your Resources</button>{{/link-to}}
+{{else}}
+<h4><i>{{#link-to "sign-up"}}Sign up{{/link-to}} or {{#link-to "sign-in"}}sign in{{/link-to}} to submit new resources</i></h4>
+
 {{/if}}
 
 

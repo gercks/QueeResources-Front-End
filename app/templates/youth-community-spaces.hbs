@@ -1,8 +1,5 @@
 <h2>Youth Community Spaces</h2>
 
-
 {{#each model as |queeresource|}}
-<div class='sourcediv'>
-<h3> {{#link-to 'queeresource' queeresource }}{{queeresource.name}}{{/link-to}}</h3>
-</div>
+{{#link-to 'queeresource' queeresource }}<button class='sourcediv' type="button">{{queeresource.name}}</button>{{/link-to}}
 {{/each}}
