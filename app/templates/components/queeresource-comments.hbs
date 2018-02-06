@@ -2,10 +2,9 @@
 <legend>
 <div class="comment">{{comment.text}}</div>
 {{!-- {{display-user user=comment.user}} --}}
-<div class="comment-buttons">
+{{#if comment.editable}}
 <button {{action 'deleteComment' comment}}>Delete Comment</button>
   {{!-- {{update-comment updateComment='updateComment' comment=comment}}  --}}
-</div>
-
+{{/if}}
 </legend>
 {{/each}}
