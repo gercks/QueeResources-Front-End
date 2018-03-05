@@ -6,17 +6,18 @@ export default Ember.Route.extend({
 
   user: Ember.computed.alias('auth.credentials.id'),
   model () {
-  // findAll makes a GET request to /queeresources
+  // returns index of resources created by current user
   return this.get('store').query('queeresource', {
       filter: {
         user_id: this.getProperties('user').user
       }
-    })
+    });
 },
 actions: {
+  // only visible to a signed in user, allows them to create a resource
   createQr(queeresource) {
-    let newQr = this.get('store').createRecord('queeresource', queeresource)
-    newQr.save()
+    let newQr = this.get('store').createRecord('queeresource', queeresource);
+    newQr.save();
     this.get('store').query('queeresource', {
         filter: {
           user_id: this.getProperties('user').user
@@ -26,7 +27,7 @@ actions: {
     .then(() => this.get('flashMessages').success('Resource successfully created!'))
     .catch(() => {
       this.get('flashMessages')
-      .danger('There was a problem. Please try again.')
+      .danger('There was a problem. Please try again.');
     });
   },
 }

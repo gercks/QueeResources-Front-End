@@ -13,6 +13,7 @@ footer {
     text-align: center;
 }
 
+// landing page styling
 .orgtypes {
   float: left;
   // margin: auto;
@@ -26,6 +27,7 @@ footer {
   color: white;
 }
 
+// queeresources by type styling
 .sourcediv {
   background-color: #8da0cb;
   height: 100px;
@@ -36,6 +38,7 @@ footer {
   float: left;
 }
 
+// button for user to view their own resources
 .myqr {
 margin: auto;
 width: 20%;
@@ -47,6 +50,7 @@ border: 2px solid #8da0cb;
 color: black;
 }
 
+// comments label
 .comments {
   border-top: 1px solid black;
 }

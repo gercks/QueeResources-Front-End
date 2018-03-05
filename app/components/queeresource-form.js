@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+// establish form input sections for each resource
 export default Ember.Component.extend({
   newQr: {
   name: null,
@@ -10,6 +11,7 @@ export default Ember.Component.extend({
   popfocus: null
 },
 actions: {
+  // sends action and data up to myqueeresources.js route
   createQr () {
     this.sendAction('createQr', this.get('newQr'));
     this.set('newQr.name', null);

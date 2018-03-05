@@ -5,6 +5,7 @@ export default Ember.Route.extend({
   auth: Ember.inject.service(),
   model () {
   // findAll makes a GET request to /queeresources
+  // returns index of all files which are then sorted by orgtype
   return this.get('store').findAll('queeresource');
 }
 });

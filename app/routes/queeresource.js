@@ -4,13 +4,11 @@ export default Ember.Route.extend({
   flashMessages: Ember.inject.service(),
   user: Ember.computed.alias('auth.credentials.id'),
   model (params) {
-    // findRecord makes a GET request to /lists/:list_id
-    // the api returns a single list
-    // ember uses the models/list.js to build an ember list object with that data
-    // and returns it as model to the template
+    // returns a single resource
     return this.get('store').findRecord('queeresource', params.queeresource_id);
   },
   actions: {
+    // only available to signed in users, allows them to add comments
     createComment(comment, queeresource) {
       let newComment = this.get('store').createRecord('comment', comment);
       queeresource.get('comments').pushObject(newComment);
