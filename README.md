@@ -27,9 +27,6 @@ I began this project by creating a functional back end database using Ruby and R
 
 Then, I began using ember to build the front end. I began by creating a route to display all of the resources in the app as a list of links that bring the user to the page each specific resource. I displayed both using handlebars and both get their functionality through ember. I then created a route to display all of the resources the signed-in user has created (if any). This route is only visible to signed in users, and it contains forms to create and update resources as well as a way to delete resources.
 
-## Improvements to be Made
-
-I am by no means done with this app. I have a few major updates to functionality that I still want to do: I want to have the front page separate resources by type via buttons, so a user can click on the type of resource they're looking for and be brought to the proper list. I also want to add like and comment options for users. Finally, this badly needs styling.
 
 ## User Stories and Wireframes
 
